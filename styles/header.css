@@ -1,8 +1,6 @@
-.cabecalho__menu__hamburguer {
-    width: 2.5rem;
-    height: 2.5rem;
-    background: url(../assets/Menu.svg) no-repeat center;
-    display: inline-block;
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
 }
 
 .cabecalho {
@@ -10,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .cabecalho__container {
@@ -17,6 +16,73 @@
     align-items: center;
 }
 
+.cabecalho__container__menu {
+    display: none;
+}
+
+.cabecalho__menu__hamburguer {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../assets/Menu.svg) no-repeat center;
+    display: inline-block;
+}
+
+.cabecalho__container__menu:checked~.lista__menu {
+    display: block;
+}
+
 .cabecalho__container__imagem {
     padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 72vw;
+}
+
+.lista__menu__titulo, .lista__menu__item {
+    padding: 1.5rem;
+    background-color: var(--cor-de-fundo-secoes); 
+}
+
+.lista__menu__titulo {
+    color: var(--cor-titulo-link);
+}
+
+.lista__menu__item__link {
+    text-decoration: none;
+    background: var(--cor-linear-gradient);
+    -webkit-animation-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.banner {
+    background: var(--cor-linear-gradient);
+    color: var(--cor-texto-banner);
+    text-align: center;
+    padding: 2.5em 3em;
+}
+
+.banner__titulo{
+    font-weight: 600;
+    font-size: 1.12em;
+}
+
+.banner__texto {
+    font-weight: 500;
+    font-size: 1.12em;
+    margin: 1em 0;
+}
+
+.banner__pesquisa {
+    width: 23.75em;
+    height: 2.75em;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
 }
