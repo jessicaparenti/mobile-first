@@ -48,7 +48,8 @@ body {
 }
 
 .lista__menu__titulo {
-    color: var(--cor-titulo-link);
+    color: var(--cor-titulo);
+    font-weight: 600;
 }
 
 .lista__menu__item__link {
@@ -79,10 +80,19 @@ body {
 }
 
 .banner__pesquisa {
-    width: 23.75em;
-    height: 2.75em;
+    width: 24em;
+    height: 3em;
     text-align: center;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--cor-texto-banner);
     border-radius: 50px;
+    color: var(--cor-texto-banner);
+}
+
+.banner__pesquisa::placeholder {
+    color: var(--cor-texto-banner);
+    font-weight: 500;
+    font-size: 1.12em;
+    background: url(../assets/Lupa.svg) no-repeat;
+    background-position: 1.5em;
 }
