@@ -1,0 +1,10 @@
+.rodape {
+    border-top: 2px solid var(--cor-de-borda-rodape);
+    background-color: var(--cor-de-fundo-rodape);
+    padding: 2em;
+}
+
+.rodape__assinatura {
+    text-decoration: none;
+    color: var(--cor-texto-rodape);
+}

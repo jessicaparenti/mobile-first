@@ -80,3 +80,7 @@
     color: var(--cor-texto-banner);
     padding: 1em 2.2em;
 }
+
+.imagem__autora {
+    margin-bottom: 1em;
+}

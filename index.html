@@ -53,7 +53,7 @@
                     <!-- Slides -->
                     <div class="swiper-slide"> <img src="./assets/ApacheKafka.svg" alt="Livro Apache Kafka da Alurabooks"> </div>
                     <div class="swiper-slide"> <img src="./assets/Lideranca.svg" alt="Livro de Liderança em Design da AluraBooks"> </div>
-                    <div class="swiper-slide"> <img src="./assets/Javascript.svg" alt="Livro da AluraBooks"> </div>
+                    <div class="swiper-slide"> <img src="./assets/Javascript.svg" alt="Livro Javascript assertivo da AluraBooks"> </div>
                     <div class="swiper-slide"> <img src="./assets/Acessibilidade.svg" alt="Livro de Acessibilidade na Web da AluraBooks"> </div>
                     <div class="swiper-slide"> <img src="./assets/Portugol.svg" alt="Livro de Lógica de programação em Portugol da AluraBooks"> </div>
                     <div class="swiper-slide"> <img src="./assets/GuiaFront-end.svg" alt="Livro Guia do Front-end da AluraBooks"> </div>
@@ -86,9 +86,76 @@
             </div>
         </section>
 
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <img src="./assets/Javascript.svg" alt="Livro Javascript assertivo da AluraBooks"> </div>
+                    <div class="swiper-slide"> <img src="./assets/Acessibilidade.svg" alt="Livro de Acessibilidade na Web da AluraBooks"> </div>
+                    <div class="swiper-slide"> <img src="./assets/Portugol.svg" alt="Livro de Lógica de programação em Portugol da AluraBooks"> </div>
+                    <div class="swiper-slide"> <img src="./assets/ApacheKafka.svg" alt="Livro Apache Kafka da Alurabooks"> </div>
+                    <div class="swiper-slide"> <img src="./assets/Lideranca.svg" alt="Livro de Liderança em Design da AluraBooks"> </div>
+                    <div class="swiper-slide"> <img src="./assets/GuiaFront-end.svg" alt="Livro Guia do Front-end da AluraBooks"> </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <div class="card__descrição">
+                        <img class="imagem__autora" src="assets/Estrelinhas.svg" alt="5 estrelas">
+                        <h3 class="card__descrição_conteudo__titulo">Autora do mês</h3>
+                        <h2 class="card__descrição_conteudo__livro">Juliana Agarikov</h2>
+                        <p class="card__descrição_conteudo__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img class="card__imagem" src="assets/Escritora.svg" alt="Foto da Juliana Agarikov. Mulher negra, cabelo preto com tranças, sorrindo e com árvores ao fundo">
+                </div>
+
+                <div class="card__botoes">
+                    <div class="card__botoes__fav-shop">
+                        <a href="#"><img class="card__botoes__fav-shop__imagem" src="assets/Favoritos.svg" alt="Ícone de favoritos"></a>
+                        <a href="#"><img class="card__botoes__fav-shop__imagem" src="assets/Compras.svg" alt="Ícone de compras"></a>
+                    </div>
+
+                    <div class="card__botoes__saiba-mais">
+                        <a class="card__botoes__saiba-mais__botao" href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos-recente">
+            <h3 class="topicos-recente__titulo">Tópicos visitados recentemente</h3>
+            <div class="topicos-recente__container">
+                <a class="topicos-recente__container__link" href="#">Android</a>
+                <a class="topicos-recente__container__link" href="#">Marketing Digital</a>
+                <a class="topicos-recente__container__link" href="#">Agile</a>
+                <a class="topicos-recente__container__link" href="#">Startups</a>
+                <a class="topicos-recente__container__link" href="#">HTML & CSS</a>
+                <a class="topicos-recente__container__link" href="#">Pyton</a>
+                <a class="topicos-recente__container__link" href="#">OO</a>
+                <a class="topicos-recente__container__link" href="#">Java</a>
+            </div>
+        </section>
+
+        <section class="novidades">
+            <h4 class="novidades__titulo">Fique por dentro das novidades!</h4>
+            <p class="novidades__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input class="novidades__input__email" type="email" name="" id="" placeholder="Cadastre seu e-mail">
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="rodape">
+        <a class="rodape__assinatura" href="#">Grupo Alura</a>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

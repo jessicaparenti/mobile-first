@@ -1,0 +1,69 @@
+.topicos-recente {
+    background: var(--cor-linear-gradient);
+    padding: 1em;
+}
+
+.topicos-recente__titulo {
+    padding: 1em;
+    color: var(--cor-texto-banner);
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.topicos-recente__container {
+    margin: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.topicos-recente__container__link {
+    color: var(--cor-texto-banner);
+    text-decoration: none;
+    background-color: var(--cor-titulo);
+    font-weight: 600;
+    padding: 1em;
+}
+
+.novidades {
+    background-color: var(--cor-de-fundo-secoes);
+    padding: 2em;
+}
+
+.novidades__titulo {
+    font-size: 1.12em;
+    background: var(--cor-linear-gradient);
+    -webkit-animation-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.novidades__texto {
+    margin: 1em 0;
+    font-weight: 300;
+    background: var(--cor-linear-gradient);
+    -webkit-animation-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.novidades__input__email {
+    width: 27em;
+    height: 3em;
+    border: 1px solid var(--cor-titulo-secundario);
+    border-radius: 50px;
+    background: var(--cor-linear-gradient);
+    -webkit-animation-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.novidades__input__email::placeholder {
+    background: var(--cor-linear-gradient);
+    background: url(../assets/Email.svg) no-repeat;
+    background-position: 3em;
+}

@@ -29,6 +29,7 @@ body {
 
 .cabecalho__container__menu:checked~.lista__menu {
     display: block;
+
 }
 
 .cabecalho__container__imagem {
@@ -40,6 +41,7 @@ body {
     position: absolute;
     top: 100%;
     width: 72vw;
+    z-index: 999;
 }
 
 .lista__menu__titulo, .lista__menu__item {
