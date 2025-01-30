@@ -20,11 +20,14 @@
 }
 
 .topicos-recente__container__link {
-    color: var(--cor-texto-banner);
-    text-decoration: none;
     background-color: var(--cor-titulo);
     font-weight: 600;
     padding: 1em;
+}
+
+.topicos-recente__container__link__link {
+    color: var(--cor-texto-banner);
+    text-decoration: none;  
 }
 
 .novidades {
@@ -50,6 +53,7 @@
 }
 
 .novidades__input__email {
+    font-family: var(--fonte-principal);
     width: 27em;
     height: 3em;
     border: 1px solid var(--cor-titulo-secundario);
@@ -66,4 +70,6 @@
     background: var(--cor-linear-gradient);
     background: url(../assets/Email.svg) no-repeat;
     background-position: 3em;
+    color: var(--cor-titulo-secundario);
+    font-family: var(--fonte-principal);
 }
