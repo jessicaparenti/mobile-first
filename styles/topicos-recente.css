@@ -73,3 +73,36 @@
     color: var(--cor-titulo-secundario);
     font-family: var(--fonte-principal);
 }
+
+
+@media screen and (min-width: 1024px) {
+    .topicos-recente__container {
+        padding: 0 3.5em;
+    }
+    .topicos-recente__titulo {
+        font-size: 1.5em;
+    }
+
+    .topicos-recente__container__link {
+        padding: 2em;
+    }
+
+    .topicos-recente__container__link__link {
+        font-size: 1.5em;
+    }
+
+    .novidades {
+        display: flex;
+        justify-content: space-around;
+        padding: 5em;
+    }
+
+    .novidades__div, .novidades__input__email {
+        width: 30vw;
+    }
+
+    .novidades__titulo {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
