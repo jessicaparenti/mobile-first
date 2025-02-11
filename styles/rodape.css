@@ -48,3 +48,14 @@
         color: var(--cor-link-rodape);
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding: 5em;
+    }
+
+    .rodape__lista {
+        border-left: 1px solid var(--cor-de-borda-rodape);
+        padding-left: 1em;
+    }
+}

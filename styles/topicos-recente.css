@@ -106,3 +106,27 @@
         font-weight: 600;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .topicos-recente {
+        padding: 3em;
+    }
+    .topicos-recente__titulo {
+        font-size: 2em;
+    }
+
+    .topicos-recente__container {
+        width: 45vw;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .novidades {
+        justify-content: center;
+    }
+
+    .novidades__input__email, .novidades__div {
+        width: 25vw;
+        margin: 0 1em;
+    }
+}
