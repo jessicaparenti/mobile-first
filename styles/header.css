@@ -27,6 +27,14 @@ body {
     display: inline-block;
 }
 
+.cabecalho__container__menu:checked ~ .container__rotulo > .cabecalho__menu__hamburguer {
+    background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.cabecalho__container__menu:checked ~ .container__rotulo {
+    background: var(--cor-linear-gradient);
+}
+
 .cabecalho__container__titulo-bold, .cabecalho__container__titulo {
     display: none;
 }
@@ -35,7 +43,7 @@ body {
     display: block;
 }
 
-.cabecalho__container__imagem {
+.container__rotulo, .cabecalho__container__imagem {
     padding: 1em;
 }
 
@@ -133,6 +141,7 @@ body {
     .nav-bar__menu {
         display: flex;
         text-transform: uppercase;
+        padding: 0 2em;
     }
 
     .cabecalho__container__nav {
@@ -143,22 +152,34 @@ body {
         display: block;
         width: 200px;
     }
-    
-    .nav-bar__lista__menu__item {
-        margin: 1em 3em;
+
+    .cabecalho__container__nav:checked~.menu__nav-bar>.nav-bar__lista__menu__item {
+        background: var(--cor-linear-gradient);
+        color: var(--cor-texto-banner);
     }
 
+    .nav-bar__lista__menu__item {
+        padding: 1.8em;
+    }
+    
     .nav-bar {
-        width: 150px;
         display: none;
         position: absolute;
         top: 100%;
         z-index: 999;
         background-color: var(--cor-de-fundo-secoes);
     }
-
+    
     .nav-bar__item {
         padding: 1em;
+    }
+
+    .nav-bar__item:hover {
+        background: var(--cor-linear-gradient);
+    }
+
+    .nav-bar__item:hover > .nav-bar__lista__menu__item__link {
+        -webkit-text-fill-color: var(--cor-texto-banner);
     }
     
     .nav-bar__lista__menu__item__link {
